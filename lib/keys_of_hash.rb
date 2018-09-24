@@ -3,9 +3,9 @@ class Hash
   def keys_of(*arguments)
       map do |x,y|
         if arguments.include?(y)
-          x
+         return x
         else
-          nil
+         return nil
         end
       end
     end
