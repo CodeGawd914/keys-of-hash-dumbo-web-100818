@@ -1,5 +1,6 @@
 class Hash
   def keys_of(arguments)
-    array = []
+    array = [
+      animal]
   end
 end
