@@ -1,10 +1,10 @@
+require 'pry'
 class Hash
   def keys_of(*arguments)
-      map do |x,y|
+    array = []
+      self.each do |x,y|
         if arguments.include?(y)
-          return x
-        else
-          return nil
+        binding.pry
         end
       end
     end
