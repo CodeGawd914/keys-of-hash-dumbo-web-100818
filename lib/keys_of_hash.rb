@@ -3,5 +3,8 @@ class Hash
     array = []
       arguments.each do |animal,country|
         if arguments.include?(country)
-  end
+          array.push(animal)
+        end
+      end
+      array
 end
