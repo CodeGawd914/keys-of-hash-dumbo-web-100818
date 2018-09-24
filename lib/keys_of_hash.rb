@@ -1,7 +1,7 @@
 class Hash
   def keys_of(*arguments)
     array = []
-      self.each do |animal,country|
+      Hash.each do |animal,country|
         if arguments.include?(country)
           array.push(animal)
         end
