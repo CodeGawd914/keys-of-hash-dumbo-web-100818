@@ -4,7 +4,7 @@ class Hash
     array = []
       self.each do |x,y|
         if arguments.include?(y)
-        binding.pry
+          array << x
         end
       end
     end
