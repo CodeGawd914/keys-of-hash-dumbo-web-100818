@@ -3,7 +3,7 @@ class Hash
   def keys_of(*arguments)
       map do |x,y|
         if arguments.include?(y)
-          array << x
+          x
         end
       end
     end
