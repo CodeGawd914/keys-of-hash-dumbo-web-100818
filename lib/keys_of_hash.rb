@@ -1,11 +1,9 @@
 class Hash
   def keys_of(*arguments)
-    array = []
-      arguments.each do |animal,country|
-        if arguments.include?(country)
-          array.push(animal)
+      self.map do |x,y|
+        if arguments.include?(y)
+           x
         end
       end
-      array
     end
 end
