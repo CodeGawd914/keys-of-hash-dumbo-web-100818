@@ -1,8 +1,10 @@
 class Hash
   def keys_of(*arguments)
-      self.map do |x,y|
+      map do |x,y|
         if arguments.include?(y)
-           x
+          return x
+        else
+          return nil
         end
       end
     end
