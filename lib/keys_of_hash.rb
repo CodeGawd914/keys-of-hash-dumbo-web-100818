@@ -4,6 +4,8 @@ class Hash
       map do |x,y|
         if arguments.include?(y)
           x
+        else
+          nil
         end
       end
     end
